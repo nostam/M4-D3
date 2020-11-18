@@ -1,15 +1,19 @@
 import React from "react";
 import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 import WarningSign from "./components/WarningSign";
+import { Container } from "react-bootstrap";
 class App extends React.Component {
   state = {
-    color: "red",
+    variant: "danger",
     text: "sample test",
   };
   render() {
     return (
       <>
-        <WarningSign text={this.state.text} color={this.state.color} />
+        <Container>
+          <WarningSign text={this.state.text} variant={this.state.variant} />
+        </Container>
       </>
     );
   }
