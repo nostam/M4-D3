@@ -2,6 +2,6 @@ import React from "react";
 import { Badge } from "react-bootstrap";
 
 const myBadge = () => {
-  return <Badge></Badge>;
+  return <Badge variant="secondary">banana</Badge>;
 };
 export default myBadge;
