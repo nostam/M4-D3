@@ -4,6 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Container } from "react-bootstrap";
 import MyBadge from "./components/MyBadge";
 import WarningSign from "./components/WarningSign";
+import SingleBook from "./components/SingleBook"
 
 class App extends React.Component {
   state = {
@@ -15,8 +16,10 @@ class App extends React.Component {
       <>
         <Container>
           <WarningSign text={this.state.text} variant={this.state.variant} />
-          <MyBadge />
+          <MyBadge text={this.state.text} color={this.state.text} />
+          <SingleBook />
         </Container>
+
       </>
     );
   }
